@@ -24,8 +24,21 @@
             flex: 2;
         }
 
-        #avatar{
+        #avatar {
             text-align: center;
+        }
+
+        #contacts {
+            background: rgba(10, 30, 60, 0.4);
+            border-radius: 20px;
+            padding: 20px 25px;
+            border: 1px solid rgba(0, 160, 255, 0.15);
+            margin-top: 20px;
+        }
+
+        button {
+            display: block;
+            margin: auto;
         }
 
         aside {
@@ -67,7 +80,25 @@
                         <li>нейроинтерфейсы - исследую возможности взаимодействия между мозгом и компьютером</li>
                     </ol>
                 </section>
-                <form action=""></form>
+                <div id="contacts">
+                    <h2>Контакты</h2>
+                    <p>Если вы хотите связаться со мной, пожалуйста, заполните форму ниже:</p>
+                    <form action="#">
+                        <div>
+                            <label for="name">Имя:</label>
+                            <input id="name" name="name" type="text" placeholder="Введите ваше имя">
+                        </div>
+                        <div>
+                            <label for="email">Email:</label>
+                            <input id="email" name="email" type="email" placeholder="Введите ваш email">
+                        </div>
+                        <div>
+                            <label for="message">Сообщение:</label>
+                            <textarea name="message" id="message" placeholder="Введите ваше сообщение"></textarea>
+                        </div>
+                        <button type="submit">Отправить</button>
+                    </form>
+                </div>
             </div>
             <aside>
                 <h3>Технология, которая изменит мир</h3>
